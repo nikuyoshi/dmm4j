@@ -15,4 +15,4 @@
 /**
  * @author nikuyoshi
  */
-package dmm4j.http;
+package dmm4j.json;
