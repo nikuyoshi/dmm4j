@@ -1,15 +1,13 @@
 /*
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License. You may obtain a copy of the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software distributed under the License
+ * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+ * or implied. See the License for the specific language governing permissions and limitations under
+ * the License.
  */
 
 package dmm4j.conf;
@@ -23,86 +21,86 @@ import dmm4j.http.HttpClientConfiguration;
  */
 public interface Configuration extends java.io.Serializable {
 
-    boolean isDebugEnabled();
+  boolean isDebugEnabled();
 
-    boolean isApplicationOnlyAuthEnabled();
+  boolean isApplicationOnlyAuthEnabled();
 
-    String getUser();
+  String getUser();
 
-    String getPassword();
+  String getPassword();
 
-    // methods for HttpClientConfiguration
-    HttpClientConfiguration getHttpClientConfiguration();
+  // methods for HttpClientConfiguration
+  HttpClientConfiguration getHttpClientConfiguration();
 
-    int getHttpStreamingReadTimeout();
+  int getHttpStreamingReadTimeout();
 
-    // oauth related setter/getters
+  // oauth related setter/getters
 
-    String getOAuthConsumerKey();
+  String getOAuthConsumerKey();
 
-    String getOAuthConsumerSecret();
+  String getOAuthConsumerSecret();
 
-    String getOAuthAccessToken();
+  String getOAuthAccessToken();
 
-    String getOAuthAccessTokenSecret();
+  String getOAuthAccessTokenSecret();
 
-    String getOAuth2TokenType();
+  String getOAuth2TokenType();
 
-    String getOAuth2AccessToken();
+  String getOAuth2AccessToken();
 
-    String getOAuth2Scope();
+  String getOAuth2Scope();
 
-    String getRestBaseURL();
+  String getRestBaseURL();
 
-    String getUploadBaseURL();
+  String getUploadBaseURL();
 
-    String getStreamBaseURL();
+  String getStreamBaseURL();
 
-    String getOAuthRequestTokenURL();
+  String getOAuthRequestTokenURL();
 
-    String getOAuthAuthorizationURL();
+  String getOAuthAuthorizationURL();
 
-    String getOAuthAccessTokenURL();
+  String getOAuthAccessTokenURL();
 
-    String getOAuthAuthenticationURL();
+  String getOAuthAuthenticationURL();
 
-    String getOAuth2TokenURL();
+  String getOAuth2TokenURL();
 
-    String getOAuth2InvalidateTokenURL();
+  String getOAuth2InvalidateTokenURL();
 
-    String getUserStreamBaseURL();
+  String getUserStreamBaseURL();
 
-    String getSiteStreamBaseURL();
+  String getSiteStreamBaseURL();
 
-    boolean isIncludeMyRetweetEnabled();
+  boolean isIncludeMyRetweetEnabled();
 
-    boolean isJSONStoreEnabled();
+  boolean isJSONStoreEnabled();
 
-    boolean isMBeanEnabled();
+  boolean isMBeanEnabled();
 
-    boolean isUserStreamRepliesAllEnabled();
+  boolean isUserStreamRepliesAllEnabled();
 
-    boolean isUserStreamWithFollowingsEnabled();
+  boolean isUserStreamWithFollowingsEnabled();
 
-    boolean isStallWarningsEnabled();
+  boolean isStallWarningsEnabled();
 
-    String getMediaProvider();
+  String getMediaProvider();
 
-    String getMediaProviderAPIKey();
+  String getMediaProviderAPIKey();
 
-    Properties getMediaProviderParameters();
+  Properties getMediaProviderParameters();
 
-    int getAsyncNumThreads();
+  int getAsyncNumThreads();
 
-    long getContributingTo();
+  long getContributingTo();
 
-    String getDispatcherImpl();
+  String getDispatcherImpl();
 
-    String getLoggerFactory();
+  String getLoggerFactory();
 
-    boolean isIncludeEntitiesEnabled();
+  boolean isIncludeEntitiesEnabled();
 
-    boolean isTrimUserEnabled();
+  boolean isTrimUserEnabled();
 
-    boolean isDaemonEnabled();
+  boolean isDaemonEnabled();
 }
