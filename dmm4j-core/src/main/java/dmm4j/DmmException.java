@@ -28,7 +28,7 @@ import static dmm4j.ParseUtil.getInt;
  * getStatusCode() method.
  *
  */
-public class DmmException extends Exception implements DmmResponse, HttpResponseCode {
+public class DmmException extends Exception implements HttpResponseCode {
   private static final long serialVersionUID = 6006561839051121336L;
   private int statusCode = -1;
   private int errorCode = -1;
