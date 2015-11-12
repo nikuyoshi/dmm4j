@@ -25,7 +25,6 @@ final class ExceptionDiagnosis implements java.io.Serializable {
   }
 
   ExceptionDiagnosis(Throwable th, String[] inclusionFilter) {
-    Throwable th1 = th;
 
     StackTraceElement[] stackTrace = th.getStackTrace();
     stackLineHash = 0;

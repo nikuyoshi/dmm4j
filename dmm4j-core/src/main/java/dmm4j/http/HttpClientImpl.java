@@ -202,7 +202,6 @@ class HttpClientImpl extends HttpClientBase implements HttpResponseCode, java.io
       logger.debug(req.getMethod().name() + " ", req.getURL());
     }
 
-    String authorizationHeader;
     if (req.getRequestHeaders() != null) {
       for (String key : req.getRequestHeaders().keySet()) {
         connection.addRequestProperty(key, req.getRequestHeaders().get(key));
