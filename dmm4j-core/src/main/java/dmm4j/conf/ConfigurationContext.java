@@ -23,7 +23,7 @@ package dmm4j.conf;
 public final class ConfigurationContext {
   private static final String DEFAULT_CONFIGURATION_FACTORY =
       "dmm4j.conf.PropertyConfigurationFactory";
-  private static final String CONFIGURATION_IMPL = "dmm4j.configurationFactory";
+  private static final String CONFIGURATION_IMPL = "dmm4j.ConfigurationFactory";
   private static final ConfigurationFactory factory;
 
   static {
