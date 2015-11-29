@@ -36,13 +36,13 @@ public final class HttpClientFactory {
     }
     if (null == clazz) {
       try {
-        clazz = Class.forName("dmm4j.AlternativeHttpClientImpl");
+        clazz = Class.forName("dmm4j.http.AlternativeHttpClientImpl");
       } catch (ClassNotFoundException ignore) {
       }
     }
     if (null == clazz) {
       try {
-        clazz = Class.forName("dmm4j.HttpClientImpl");
+        clazz = Class.forName("dmm4j.http.HttpClientImpl");
       } catch (ClassNotFoundException cnfe) {
         throw new AssertionError(cnfe);
       }
